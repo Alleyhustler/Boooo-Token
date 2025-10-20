@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from argoxi.neocities.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Jul 2025 17:17:21 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <title>Booooo</title>
+</head>
+<style>
+
+body {
+    background-color: var(--blk);
+}
+
+h2 {
+    margin: 0.5em;
+    font-size: 1.2em;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+table {
+    border: 0;
+    border-spacing: 0;
+    padding: 0;
+}
+td {
+    border: 0;
+    border-spacing: 0;
+    padding: 0;
+}
+tr {
+    border: 0;
+    border-spacing: 0;
+    padding: 0;
+}
+a {
+    transition: 1s;
+}
+
+ul {
+    padding: 1em;
+    margin: 0;
+}
+
+li {
+    list-style: '+';
+}
+
+.pixelated {
+      image-rendering: pixelated;
+}
+
+#customborder {
+    border: 15px solid white;
+    border-image-slice: 13 11 13 11;
+    border-image-width: 13px 11px 13px 11px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: repeat repeat; 
+    border-image-source: url(borderimagetest.html);
+    background-color: var(--lightgrey);
+    background-clip: border-box;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'mainimg' 'nav';
+    justify-content: center;
+}
+
+.contentsbtn {
+    color: grey;
+    padding: 0;
+    background-color: var(--accent);
+    transition: 0.2s;
+}
+.contentsbtn:hover {
+    color: var(--white);
+    transition: 0.2s;
+}
+.contentsbtn h2:after {
+    content: '\002B';
+    font-weight: bold;
+    margin: 0 0 0 0.5em;
+}
+.active h2:after {
+    content: "\2212";
+}
+.links {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.navigation {
+    text-align: center;
+    grid-area: nav;
+    width: 195px;
+    margin: auto;
+    margin-top: 1em;
+}
+.updates {
+    background: var(--lightgrey);
+    border: var(--blk) double 4px;
+    width: calc(100% - 0.5em - 8px);
+    max-height: 120px;
+    overflow: auto;
+    padding: 0.5em;
+    margin: auto;
+}
+.navigation:has(#about-link:hover) ~ .mainimg #ghost{
+    opacity: 100;
+}
+.navigation:has(#links-link:hover) ~ .mainimg #crack{
+    opacity: 100;
+}
+.navigation:has(#bookshelf-link:hover) ~ .mainimg #heart{
+    opacity: 100;
+}
+.navigation:has(#gallery-link:hover) ~ .mainimg #skull{
+    opacity: 100;
+}
+.navigation:has(#wardrobe-link:hover) ~ .mainimg #hand{
+    opacity: 100;
+}
+
+.mainimg {
+    margin: auto;
+    width: 500px;
+    height: 624px;
+    background: url(graphics/custom/frame2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: 1s;
+    grid-area: mainimg;
+}
+
+#ghost, #crack, #heart, #skull, #hand{
+    opacity: 0;
+    transition: 0.5s;
+    width: 100%;
+    position: absolute;
+}
+
+#heart {
+    animation: float 1.5s alternate ease-in-out infinite;
+}
+
+#navtable a:link, #navtable a:visited {
+    color: var(--blk);
+    transition: 0.1s;
+}
+#navtable a:hover, #navtable a:active {
+    color: var(--accent);
+    transition: 0.1s;
+    margin-left: 0.5em;
+}
+
+</style>
+
+<body class="pixelated">
+<div class="content">
+
+<div class="navigation">
+
+
+    <div class="navigation">
+
+        <table id="navtable">
+            <tr>
+                <td style="background-image: url(graphics/custom/tl2.png); width: 11px;"></td>
+                <td style="background-image: url(graphics/custom/top2.png); height: 13px;"></td>
+                <td style="background-image: url(graphics/custom/tr2.png); width: 11px;"></td>
+            </tr>
+            <tr>
+                <td style="background-image: url(graphics/custom/left2.png);"></td>
+                <td style="background-color: #545456;">
+
+    <div class="contentspanel">
+
+    <button class="contentsbtn"><h2>We are here to scare the "Shit" out of you</h2></button>
+    <div class="links"><ul>
+        <li><a href="sitemap.html" id="sitemap-link">sitemap</a></li>
+        <li><a href="https://x.com/Boooo_Coin" id="about-link">about / CA</a></li>
+        <li><a href="https://x.com/Boooo_Coin" id="links-link">Twitter</a></li>
+        <!-- <li><a href="https://argoxi.123guestbook.com/" id="guestbook-link" target="_blank">guestbook</a></li> -->
+    </ul>
+
+
+
+    </div>
+    </div>
+
+                </td>
+                <td style="background-image: url(graphics/custom/right2.png);"></td>
+            </tr>
+            <tr>
+                <td style="background-image: url(graphics/custom/bl2.png);"></td>
+                <td style="background-image: url(graphics/custom/bottom2.png); height: 13px;"></td>
+                <td style="background-image: url(graphics/custom/br2.png);"></td>
+            </tr>
+        </table>
+    
+    </div>
+</div>
+
+<div class="mainimg">
+    <img src="graphics/custom/ghost2.png" id="ghost">
+    <img src="graphics/custom/crack.png" id="crack">
+    <img src="graphics/custom/heart.png" id="heart">
+    <img src="graphics/custom/skull.png" id="skull">
+    <img src="graphics/custom/hand.png" id="hand">
+</div>
+
+</div>
+
+
+</body>
+
+<!-- Mirrored from argoxi.neocities.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Jul 2025 17:17:31 GMT -->
+</html>
+
+<script src="code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts/functions.js">
+</script>

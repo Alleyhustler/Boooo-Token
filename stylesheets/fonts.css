@@ -1,0 +1,37 @@
+@font-face {
+src: url(https://dl.dropbox.com/s/vx01o8y0ugk8p06/RomanceA.ttf);
+font-family: 'RomanceA';
+}
+
+@font-face {
+src: url(https://dl.dropbox.com/s/dlhixh1r7trx7t4/PlayfairDisplaySC-Regular.ttf);
+font-family: 'PlayfairDisplaySC';
+}
+
+@font-face {
+	src: url(https://dl.dropbox.com/s/gb5kwlbh7ky4zh5/Alice in Wonderland.ttf);
+	font-family: 'AliceInWonderland';
+}
+
+@font-face {
+	src: url(https://dl.dropbox.com/s/shyn5yk8xr7xpdq/KakomiA.ttf);
+	font-family: 'KakomiA';
+}
+
+@font-face {
+	src: url(https://dl.dropbox.com/s/pww9kwshv4eopgu/mamemoji.ttf);
+	font-family: 'mamemoji';
+}
+
+@font-face {
+	src:  url(https://dl.dropbox.com/s/7jbxskp0h4tzcse/AngelicAlchemy.ttf);
+	font-family: 'AngelicAlchemy';
+}
+
+@font-face {
+	src:  url(https://dl.dropbox.com/s/c2fyr3rjc6yerpi/EmojiFont.ttf);
+	font-family: 'emojifont';
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Slackside+One&amp;display=swap');

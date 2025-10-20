@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from argoxi.neocities.org/fanpages/bg3 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Jul 2025 17:18:25 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/fonts.css">    
+    <script src="kit.fontawesome.com/f936906ae0.html" crossorigin="anonymous"></script>
+    <title>Blood Like Wine</title>
+</head>
+
+<style>
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: black url(bg3/white-wall-3-2.png);
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=26411);
+}
+
+p {
+    font-family: mamemoji;
+    font-size: 1.1em;
+}
+
+a:hover {
+    color: #828b8a;
+}
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    margin-top: 0.5em;
+}
+
+mark {
+    background-color: #c1c1ac;
+    padding: 0 5px 0 5px;
+}
+#mark-blk {
+    background-color: #181818;
+    color: #828b8a;
+}
+
+::selection {
+    background-color: #0a0a0a;
+    color: white;
+}
+
+#absolute {
+    position: absolute;
+}
+
+#imgborder {
+    border: 1px solid #c1c1ac;
+}
+
+#floating-text {
+    color: #fff;
+}
+
+#tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+#tooltip #tooltiptext {
+  visibility: hidden;
+  min-width: 100px;
+  padding: 0.5em;
+  background-color: #0a0a0a;
+  text-align: center;
+  border: 1px solid #c1c1ac;
+  color: #c1c1ac;
+
+  position: absolute;
+  bottom: -30px;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+#tooltip:hover #tooltiptext {
+  visibility: visible;
+  opacity: 100;
+  transition: 0.2s;
+}
+
+.bg3container {
+    max-width: 1000px;
+    margin: 5em auto 1em auto;
+    position: relative;
+    text-align: center;
+}
+
+.numerals {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1em 0 1em 0;
+}
+
+.note1 {
+    width: 309px;
+    height: 520px;
+    padding: 70px 50px 50px 50px;
+    background-image: url(bg3/paperalt.png);
+    rotate: 2deg;
+}
+
+#mirror {
+    position: absolute;
+    top: 460px;
+    left: -160px;
+    rotate: -65deg;
+    width: 400px;
+    z-index: 1;
+}
+
+#skelly {
+    position: absolute;
+    top: 500px;
+    right: 0px;
+    rotate: 10deg;
+    z-index: -5;
+}
+
+#letter1 {
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    rotate: 5deg;
+}
+
+#stamp {
+    position: absolute;
+    top: 500px;
+    right: -120px;
+    rotate: 10deg;
+    width: 200px;
+}
+
+.divii {
+    position: relative;
+    background: #0a0a0a url(bg3/light-paper-fibers.png);
+    border: 1px solid black;
+    max-width: 800px;
+    margin: auto;
+    margin-top: -120px;
+}
+
+.diviii {
+    background: url(bg3/dither_it_card-removebg-preview.png);
+    width: calc(400px - 2em);
+    height: calc(613px - 3em);
+    padding: 2em 1em 1em 1em;
+    rotate: -2deg;
+    position: relative;
+}
+
+#yap-zone {
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 0 2em;
+}
+
+.gifset {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em 0 1em 0;
+    flex-wrap: wrap;
+}
+
+/*music player code by adilene.net!*/
+#musicplayer{
+        background: #0a0a0a url(bg3/light-paper-fibers.png); /* background color of player */
+        border:2px solid #0a0a0a; /* border around player */
+        width:100%; /* width of the player */
+        margin: auto;
+        position: fixed;
+        margin-top: -5em;
+        z-index: 5;
+    }
+ 
+    .songtitle{
+        padding:5px; /* padding around song title */
+        border-bottom:2px solid #0a0a0a; /* border under song title */
+        display:block;
+    }
+ 
+    .controls{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size:18px !important; /* size of controls */
+        background: #0a0a0a url(bg3/light-paper-fibers.png); /* background color of controls */
+        text-align:center;
+        width:100%;
+    }
+ 
+    .controls-grid{
+        display: grid;
+        grid-template-columns: 0.2fr 3.8fr;
+    }
+ 
+    .seeking{
+        background: #0a0a0a url(bg3/light-paper-fibers.png); /* background color of seeking bar */
+        display:flex;
+        justify-content: space-evenly;
+        padding:5px; /* padding around seeking bar */
+    }
+ 
+    .current-time{
+        padding-right:5px;
+    }
+ 
+    .total-duration{
+        padding-left:5px;
+    }
+ 
+    i.fas:hover{
+        cursor:help;
+    }
+ 
+    i.fas.fa-pause, i.fas.fa-play, i.fas.fa-forward, i.fas.fa-backward{
+        color:#0a0a0a; /* color of controls */
+    }
+    
+    input[type=range] {
+        -webkit-appearance: none;
+        width: 100%;
+        background: #0a0a0a url(bg3/light-paper-fibers.png); /* background color of seeking bar - make the color same as .seeking background color */
+    }
+    
+    input[type=range]:focus {
+        outline: none;
+    }
+    
+    /* settings for chrome browsers */
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 2px; /* thickness of seeking track */
+        cursor: help;
+        background: #0a0a0a; /* color of seeking track */
+    }
+    
+    input[type=range]::-webkit-slider-thumb {
+        height: 10px; /* height of seeking square */
+        width: 10px; /* width of seeking square */
+        border-radius: 0px; /* change to 5px if you want a circle seeker */
+        background: #0a0a0a; /* color of seeker square */
+        cursor: help;
+        -webkit-appearance: none;
+        margin-top: -4.5px; 
+    }
+    
+    /* settings for firefox browsers */
+    input[type=range]::-moz-range-track {
+        width: 100%;
+        height: 2px; /* thickness of seeking track */
+        cursor: help;
+        background: #0a0a0a; /* color of seeking track */
+    }
+    
+    input[type=range]::-moz-range-thumb {
+        height: 10px; /* height of seeking square */
+        width: 10px; /* width of seeking square */
+        border-radius: 0px; /* change to 5px if you want a circle seeker */
+        background: #0a0a0a; /* color of seeker square */
+        cursor: help;
+        border:none;
+    }
+
+@media only screen and (max-width:900px) {
+.numerals {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+#imgborder {
+    margin: 1em auto;
+}
+
+.note1 {
+    margin: auto;
+}
+
+.divii {
+    margin: 0 1em;
+    margin-top: -80px;
+}
+
+.diviii {
+    margin: auto;
+}
+}
+
+@media only screen and (max-width:500px) {
+.bg3container {
+    overflow-x: hidden;
+}
+
+.numerals {
+
+    gap: 2em;
+}
+
+#imgborder {
+    margin: auto;
+    width: calc(100% - 2em);
+}
+
+#letter1 {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    rotate: 5deg;
+}
+
+#mirror {
+    top: 250px;
+    left: -120px;
+    rotate: -85deg;
+    width: 400px;
+    z-index: 1;
+}
+}
+</style>
+
+<body>
+
+<div id="musicplayer">
+        <div>
+            <marquee scrollamount="5" class="songtitle"></marquee>
+        </div>
+ 
+<div class="controls-grid">
+        <div class="controls">
+                    <div class="prev-track" onclick="prevTrack()"><i class="fas fa-backward"></i></div>
+                    <div class="playpause-track" onclick="playpauseTrack()" ><i class="fas fa-play"></i></div>
+                    <div class="next-track" onclick="nextTrack()"><i class="fas fa-forward"></i></div>
+        </div>
+ 
+        <div class="seeking">
+            <div class="current-time">00:00</div>
+ 
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+ 
+            <div class="total-duration">0:00</div>
+        </div>
+</div>
+        <audio id="music" src="#"></audio> 
+</div>
+
+<div class="bg3container">
+    <p id="floating-text">Lengthy discussion of Baldur's Gate 3 ahead. Beware of spoilers.<br>
+    <a href="bg3/bg3alt.html">Please find a text only version of this page here if the styling is difficult to read!</a></p>
+
+
+    <div class="numerals">
+        <img id="imgborder" src="bg3/skeleton.png">
+        <img id="mirror" src="bg3/dither_it_tumblr_mirror.png">
+    <div class="note1">
+    <h2>I.</h2>
+        <p><mark>Nearly two hundred years and I never came back. Not since the night I woke up down there.<br>
+        I had to punch a hole in the coffin and claw my way through six feet of dirt.<br>
+        Then when I finally broke the surface, retching up dirt and congealed blood, Cazador was waiting.<br>
+        From that day on I was his. Until today.<br><br>
+        <span id="italics">You were never his; Whatever he had, he took by force.</span><br><br>
+        Maybe, but he did take it. There's almost nothing left of the person I was. Just a name on a rock.<br><br>
+        <span id="italics">How does it feel to be free?</span><br><br>
+        Exhilarating. Terrifying. Exhausting.<br><br>
+        <!-- For nearly two centuries I stalked the streets like a ghost while the person I was lay here, dead and buried.<br>
+        Now I need to figure out who I am. What I want.</mark> --></p>
+    </div>
+    </div>
+
+    <img src="bg3/dither_it_bottle.png" id="skelly">
+
+    <div class="divii">
+    <div>
+    <h2>II.</h2>
+        <p><mark id="mark-blk">A character and a series that needs no introduction. Baldur's Gate 3 is a phenomenal game and story; one that has so much to explore and brought me out of a burn out. Something about the setting and the world and its characters fed the bug in me that wants to get up and create something, and I can't explain why. I discovered this game around Feb 2024, recommended to me by a few friends and bought as a gift from my brother. Playing it quickly became a very treasured experience to me. This page is a love letter to my time playing it and my favourite character from it.</mark></p>
+    </div>
+    </div>
+
+    <div class="numerals">
+
+    <img id="letter1" src="bg3/dither_it_letter1.png">
+
+    <div class="diviii">
+    <h2>III.</h2>
+        <p id="yap-zone">I think what I like so much about Astarion is his potential as a character. The nature of BG3's gameplay means that there's so many different sides of characters you can explore, reflecting your own gameplay choices. Astarion in particular has the potential to grow as a person and find his place in the world, or chase a facade of security through power indefinitely and becoming defined by his own fears. When you meet Astarion in-game, he seems to have a very shameless and decadent perspective of what he wants out of life; he wants money, he wants power, he wants revenge. And he emphasises this many times, through his snobby responses to all the things that happen in game. He's shamelessly selfish. <br>
+            I didn't actually expect to like Astarion very much when I started BG3. Excessively flirty characters make me uncomfortable and I turned him down very often at the start of the game (which later gave me a freak out when I decided I actually wanted to romance him. I thought my approval was definitely too low LOL). I think the point in which my opinion changed was the bite scene; the moment of "This is a gift you know, I won't forget it" was so tonally different to the way he presented himself as a character and it interested me enough to give him a chance. Retrospectively, I'm glad I did.<br>
+            It's so interesting to go through this game and see how his baseline desires change throughout. I love how you have the opportunity to ask him what he wants in each act of the game-- twice in act 1, once in act 2 and once in act 3 in the resolution of his plotline (during his spawn route at least; I dont know the ins and outs of his ascendent route as much as I do with spawn Astarion). It's something Minthara puts in very concise words, something along the lines of "He's been depraved of power and strong blood for so long that he's addicted to both." The way this informs his actions throughout the game is endlessly fun to analyse and think about-- especially going into the difference between his ascended and unascended endings. <br>
+            On a more indulgent note, I'm so attached to Astarion's romance. I personally prefer his spawn route so I'll be talking about that here. I still go back to my old saves to experience scenes and my favourite lines of dialogue again and again-- I love the feeling of being so close, yet so far from each other until things develop in act 2. The "no strings attached" attitude that it starts with, evolving into "I don't know what to call this, but I don't care because you mean so much to me". I like the teasing and the playfulness that's contrasted by the moments where you get to express gentle intimacy to him (I'll think about the hug in act 2 until the end of my life). I particularly love romancing him as the Dark Urge, and the dynamic of two people getting to experience a relationship where they have autonomy for the first time and accepting that they can be loved, without an ulterior motive or an expectation of something in return, or fulfilling something that they have to be. Wanting to protect each other until the end. It's so beautifully written to me and I'll love it forever.<br>
+            In act 3, everything in the story reaches its climax, and Astarion's plotline is no different. It's the point in which the confrontation that's been looming in the distance ever since he found freedom is suddenly due to resolve at any moment-- which of course, is confronting Cazador. Towards the start of act 3 you can see him steel himself for what's to come, ruling out any mercy for the people involved. He will kill Cazador, and he will take the boons of the ritual for himself. He decides that he no longer cares who it affects so long as he'll be safe. This is what he needs to do to be happy. I love the lead up to Cazador's fight. It's such an interesting point of contention between Astarion and everyone in the party, who love him but (mostly) don't agree with the actions he wants to take. I like how he's so dead-set on his goal only to be completely shaken in the moment right before you would come to fight Cazador, where Astarion comes face to face with the skeletons in his closet in the form of every single person he's lured to their doom for Cazador (and by extension his own survival). I love the lengths he goes to to convince himself he's doing the right thing, that it wasn't his fault. The dialogue option available when romancing him that's along the lines of "If we had met just a bit earlier, you would have led me here instead of to that pretty clearing" is so incredibly good and I love the very visible moment of distress you see him go through. <br>
+            In giving up the ritual, there's a certain catharsis in seeing Astarion bring an end to Cazador and inflict just an inch of the pain he's suffered the past two centuries onto the one who caused it. It's over, and he feels so numb. He talks grandly of how happy he'll feel killing Cazador in the early stages of the game, but now that it's over and done with he just feels tired. But he finally has the ability to think for his future, and what comes next. Who he wants to be, what he wants, and what this life has to offer him.<br>
+            What I expected from Astarion's personal plotline was the usual blood and angst you get from vampire characters in media. What I didn't expect was a surprisingly in-depth portrayal of sexual abuse; the good, the bad and the ugly. Having finished the game, I can really understand why his story resonated with so many people and how he became the internet's number one babygirl for a hot second. I love BG3 for many reasons beyond just one character, but I would be lying if I said he didn't make the experience one of my favourites. I'm so grateful I got to experience this game.<br>
+            
+        </p>
+    
+    <img src="bg3/dither_it_stamp(1).png" id="stamp">
+    </div>
+        <img id="imgborder" src="bg3/sunset.png">
+    </div>
+
+    <div>
+
+        <img src="bg3/grave02_10.gif">
+
+        <div class="gifset">
+    <a id="tooltip" href="https://www.tumblr.com/khywren/749742885156618240" target="_blank"><img id="imgborder" src="bg3/gif1.gif">
+        <div id="tooltiptext">cr: khywren</div></a>
+    <a id="tooltip" href="https://www.tumblr.com/khywren/749742885156618240" target="_blank"><img id="imgborder" src="bg3/gif2.gif">
+        <div id="tooltiptext">cr: khywren</div></a>
+    <a id="tooltip" href="https://www.tumblr.com/khywren/749742885156618240" target="_blank"><img id="imgborder" src="bg3/gif3.gif">
+        <div id="tooltiptext">cr: khywren</div></a>
+        </div>
+        <img src="bg3/grave02_10.gif"><br>
+
+    <a href="newspaper.html">back?</a>
+    
+    </div>
+
+</div>
+
+<style type="text/css">body { cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAPlhmALWroQBwcHAA5trPAKucjADg4OAAQD8/AJSUlADHuasA2c3BACY3QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAAABziAAAAAAAAAAAAAAAAAAACIMAAAAAAAAAAAAAAAAAuxAwAAAAAAAAAAAAAAAAAAERAAAAAAAAAAAAAAAAALsQAAAAAAAAAAAAAAgAAAABEQAAAAAAAAAAAAAAgAC7EAAAAAAAAAAAAAAAAAgAAREAAAAAAAAAAAAAAAAAgBAAAAAAAAAAAAAAAAAAWQgBAAAAAAAAAAAAAAAABZQAgAAAAAAAAAAAAAAAAFlAZggAAAAAAAAAAAAAAAWUBmoAgAAAAAAAAAAAAABZQGagAAgAAAAAAAAAAAAFlAZqAAAAAAAAAAAAAAAAWUBmoAAAAAAAAAAAAAAABZQGagAAAAAAAAAAAAAAAFlAZqAAAAAAAAAAAAAAAAWUBmoAAAAAAAAAAAAAAAAJQGagAAAAAAAAAAAAAAAAlAZqAAAAAAAAAAAAAAAAAEBmoAAAAAAAAAAAAAAAAAIGYAAAAAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////+f////D////gf///wH///4D///8B//8+A///HAf//4gP///AH///wD///4B///8A///+AH///AA///gDH//wB5//4A///8Af//+AP///AH///wD///4B///+A////Af///wf///4f///+f////f////w=='), auto; }</style>
+
+<script>
+    // initiate variables
+    let track_name = document.querySelector(".songtitle");
+
+    let playpause_btn = document.querySelector(".playpause-track");
+    let next_btn = document.querySelector(".next-track");
+    let prev_btn = document.querySelector(".prev-track");
+
+    let seek_slider = document.querySelector(".seek_slider");
+    let curr_time = document.querySelector(".current-time");
+    let total_duration = document.querySelector(".total-duration");
+
+    let track_index = 0;
+    let isPlaying = false;
+    let updateTimer;
+    
+    // create new audio element
+    let curr_track = document.getElementById("music");
+    
+    //
+    // DEFINE YOUR SONGS HERE!!!!!
+    // MORE THAN FOUR SONGS CAN BE ADDED!!
+    // JUST ADD ANOTHER BRACKET WITH NAME AND PATH
+    // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
+    let track_list = [
+        {
+            name:"I Want to Live",
+            path:"https://files.catbox.moe/jsginh.mp3"
+        }
+    ];
+    //
+    //
+    //
+    //
+    //
+
+    function loadTrack(track_index) {
+        clearInterval(updateTimer);
+        resetValues();
+
+        // load a new track
+        curr_track.src = track_list[track_index].path;
+        curr_track.load();
+        
+        // update details of the track
+        track_name.textContent = "playing " + (track_index + 1) + " of " + track_list.length + ": " + track_list[track_index].name;
+
+        // set an interval of 1000 milliseconds for updating the seek slider
+        updateTimer = setInterval(seekUpdate, 1000);
+        
+        // move to the next track if the current one finishes playing 
+        curr_track.addEventListener("ended", nextTrack);
+    }
+
+    // reset values
+    function resetValues() {
+        curr_time.textContent = "0:00";
+        total_duration.textContent = "0:00";
+        seek_slider.value = 0;
+    }
+
+    // checks if song is playing
+    function playpauseTrack() {
+        if (!isPlaying) playTrack();
+        else pauseTrack();
+    }
+
+    // plays track when play button is pressed
+    function playTrack() {
+        curr_track.play();
+        isPlaying = true;
+        
+        // replace icon with the pause icon
+        playpause_btn.innerHTML = '<i class="fas fa-pause"></i>';
+    }
+
+    // pauses track when pause button is pressed
+    function pauseTrack() {
+        curr_track.pause();
+        isPlaying = false;
+        
+        // replace icon with the play icon
+        playpause_btn.innerHTML = '<i class="fas fa-play"></i>';
+    }
+
+    // moves to the next track
+    function nextTrack() {
+        if (track_index < track_list.length - 1)
+            track_index += 1;
+        else track_index = 0;
+        loadTrack(track_index);
+        playTrack();
+    }
+
+    // moves to the previous track
+    function prevTrack() {
+        if (track_index > 0)
+            track_index -= 1;
+        else track_index = track_list.length;
+        loadTrack(track_index);
+        playTrack();
+    }
+
+    // seeker slider
+    function seekTo() {
+        seekto = curr_track.duration * (seek_slider.value / 100);
+        curr_track.currentTime = seekto;
+    }
+
+    function seekUpdate() {
+        let seekPosition = 0;
+        
+        // check if the current track duration is a legible number
+        if (!isNaN(curr_track.duration)) {
+            seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+            seek_slider.value = seekPosition;
+            
+        // calculate the time left and the total duration
+        let currentMinutes = Math.floor(curr_track.currentTime / 60);
+        let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+        let durationMinutes = Math.floor(curr_track.duration / 60);
+        let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+            
+        // adding a zero to the single digit time values
+        if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
+        if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
+        if (currentMinutes < 10) { currentMinutes = currentMinutes; }
+        if (durationMinutes < 10) { durationMinutes = durationMinutes; }
+
+        curr_time.textContent = currentMinutes + ":" + currentSeconds;
+        total_duration.textContent = durationMinutes + ":" + durationSeconds;
+      }
+    }
+    
+    // load the first track in the tracklist
+    loadTrack(track_index);
+</script>
+
+</body>
+
+<!-- Mirrored from argoxi.neocities.org/fanpages/bg3 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Jul 2025 17:18:30 GMT -->
+</html>

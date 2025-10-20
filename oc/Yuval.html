@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from argoxi.neocities.org/oc/Yuval by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Jul 2025 17:18:30 GMT -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="octemplate.css" rel="stylesheet" type="text/css" media="all">
+  <link href="stylesheets/fonts.css" rel="stylesheet" type="text/css" media="all">
+  <title>Afflatus Misery</title>
+</head>
+
+<style>
+:root {
+  --darkest: rgb(22, 22, 22);
+  --dark: #756977;
+  --mid: #a3a2a5;
+  --light: #c2c0c7;
+  --lightest: #faf2ef;
+  --accent: #3e2249;
+}
+
+body {
+  background: var(--darkest);
+  background-image: url(graphics/across/w12-1b.gif);
+}
+</style>
+
+<body>
+
+<div class="container">
+    <div class="pfp">
+      <img src="yuval/pfp2.png">
+    </div>
+    <div class="info">
+      <p>Yuval Dulce</p>
+      <p>age: late 20s</p>
+      <p>she/her</p>
+      <p>#8d80ad
+      <div class="characolour" style="background-color: #8d80ad;"></div></p><br>
+      <div class="backbutton"><a href="index.html">back</a></div>
+    </div>
+    <div class="main">
+
+<div class="content">
+  <div class="carouselcontainer">
+  <div class="slides">
+    <p>Prelude ;</p>
+
+<table id="biotable">
+  <tr>
+      <td style="background-image: url(graphics/ooparts/table23/hidariue.gif); width: 41px;"></td>
+      <td style="background-image: url(graphics/ooparts/table23/ue.gif); height: 41px;"></td>
+      <td style="background-image: url(graphics/ooparts/table23/migiue.gif); width: 41px;"></td>
+  </tr>
+  <tr>
+      <td style="background-image: url(graphics/ooparts/table23/hidari.gif);"></td>
+      <td>
+        <p>A peculiar Xaela.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </td>
+      <td style="background-image: url(graphics/ooparts/table23/migi.gif);"></td>
+  </tr>
+  <tr>
+      <td style="background-image: url(graphics/ooparts/table23/hidarisita.gif);"></td>
+      <td style="background-image: url(graphics/ooparts/table23/sita.gif); height: 41px;"></td>
+      <td style="background-image: url(graphics/ooparts/table23/migisita.gif);"></td>
+  </tr>
+</table>
+
+  </div>
+  </div>
+
+  <div class="carouselcontainer">
+  <div class="slides">
+  <div class="imgcontainer">
+
+<img src="yuval/aes1.png" class="item"></img>
+<img src="yuval/aes2.png" class="item"></img>
+<img src="yuval/aes3.png" class="item"></img>
+<img src="yuval/aes4.png" class="item"></img>
+<img src="yuval/aes6.png" class="item"></img>
+<img src="yuval/aes5.png" class="item"></img>
+<img src="yuval/aes8.png" class="item"></img>
+<img src="yuval/aes9.png" class="item"></img>
+<img src="yuval/aes10.png" class="item"></img>
+
+  </div>
+  </div>
+  </div>
+
+  <div class="carouselcontainer">
+  <div class="slides">
+    <p id="itallics">click to open in a new tab</p>
+    <div class="gallery">
+
+      <a target="_blank" href="yuval/art1.png"><div class="galleryitem"><img src="yuval/thumb1.jpg" id="landscape"></div></a>
+      <a target="_blank" href="yuval/art2.jpg"><div class="galleryitem"><img src="yuval/thumb2.jpg" id="portrait"></div></a>
+      <a target="_blank" href="yuval/art3.png"><div class="galleryitem"><img src="yuval/thumb3.jpg" id="portrait"></div></a>
+
+    </div>
+  </div>
+  </div>
+
+  <div class="carouselcontainer">
+    <div class="slides">
+      <div class="wardrobe">
+  
+        <div class="wardrobeitem"><img src="yuval/outfit1.png"></div></a>
+        <div class="wardrobeitem"><img src="yuval/outfit3.png"></div></a>
+        <div class="wardrobeitem"><img src="yuval/outfit2.png"></div></a>
+  
+      </div>
+    </div>
+    </div>
+
+</div>
+
+<div class="arrows">
+  <!--<div>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>-->
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+    </div>
+</div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+
+  </script>
+</body>
+
+<!-- Mirrored from argoxi.neocities.org/oc/Yuval by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Jul 2025 17:18:42 GMT -->
+</html>

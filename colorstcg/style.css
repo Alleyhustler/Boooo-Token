@@ -1,0 +1,250 @@
+@font-face {
+    src: url(https://dl.dropbox.com/s/vx01o8y0ugk8p06/RomanceA.ttf);
+    font-family: 'RomanceA';
+    }
+    
+@font-face {
+    src: url(https://dl.dropbox.com/s/dlhixh1r7trx7t4/PlayfairDisplaySC-Regular.ttf);
+    font-family: 'PlayfairDisplaySC-Regular';
+    }
+
+:root{
+    
+    /* general colors */
+    --websitebackgroundcolor: #000;
+    --pagecontentmaincolor: #636363;
+    --pagecontentaccentcolor: #c7aee8;
+    --bordercolour: black;
+    
+    --navbuttoncolor: #9b9b9b;
+    --navbuttonlightcolor: #c7c7c7;
+    
+    --textcolor: #15111a;
+    --linkcolor: #fff;
+    
+    /* collecting page header/deck colors */
+    --collectingcolor-red: #641b28;
+    --collectingcolor-orange: #cf824f;
+    --collectingcolor-yellow: #f0cb7d;
+    --collectingcolor-green: #439479;
+    --collectingcolor-blue: #4a6fa0;
+    --collectingcolor-purple: #604379;
+    --collectingcolor-brown: #532e2d;
+    --collectingcolor-gray: #39343b;
+    --collectingcolor-special: #ccc9cc;
+}
+
+
+/* DO NOT CHANGE BELOW UNLESS YOU KNOW WHAT YOU'RE DOING */
+
+/* GENERAL */
+body{
+    background-image: url(cdn.discordapp.com/attachments/977549029380591686/1036505715818369135/dp1_s1.gif);
+    /* background image instead of color */
+    /* background-image: ? */
+    font-family: RomanceA;
+}
+p{
+    color: var(--textcolor);
+    margin: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px;
+}
+a{
+    color: var(--linkcolor);
+    text-decoration: underline var(--pagecontentaccentcolor);
+    transition: 0.2s;
+}
+a:hover{
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+hr{
+    border: 1px solid var(--pagecontentaccentcolor);
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.fcol{
+    flex-direction: column;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.spaceevenly{
+    justify-content: space-evenly;
+}
+.tleft{
+    text-align: left;
+}
+.section{
+    margin: 5px;
+}
+.marginimage{
+    margin: 5px;
+}
+.cardimage{
+    margin: 0px;
+}
+
+#middle{
+    min-height: 500px;
+    max-width: 900px;
+    padding: 10px;
+    background-color: var(--pagecontentmaincolor);
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 4px double var(--bordercolour);
+}
+
+#creditscontainer p {
+    color: #fff;
+}
+
+
+/* HEADER */
+#navbar{
+    max-height:200px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    gap: 0.2em;
+}
+#websiteheader{
+    margin-bottom: 20px;
+    color: #fff;
+}
+.navbutton{
+    color: black;
+    background-color: var(--navbuttoncolor);
+    text-decoration: none;
+    padding: 7px;
+    border: 4px double var(--bordercolour);
+    transition: 0.2s;
+}
+.navbutton:hover{
+    background-color: var(--navbuttonlightcolor);
+    transition: 0.2s;
+}
+.navbutton::before{
+    content: "\263E  ";
+    font-size: 0.7em;
+}
+
+
+/* HOME PAGE */
+#avatar{
+    width: 80px;
+}
+.portfoliobutton{
+    border: none; 
+    background-color: transparent;
+}
+.portfoliohidden{
+    background-color: var(--pagecontentmaincolor);
+    width: 110px;
+    border: 1px solid var(--pagecontentaccentcolor);
+    position: absolute; 
+    display: none; 
+    text-align:left
+}
+.pendingsection{
+    margin: 5px; 
+    margin-top: 0px;
+}
+#crayonscontainer{
+    display:flex; 
+    width: 200px; 
+    justify-content: space-evenly;
+}
+.crayoncount{
+    display: flex; 
+    flex-direction: column; 
+    text-align: center; 
+    margin-right: 5px;
+}
+.sectionlink {
+    margin: 5px;
+}
+
+/* COLLECTING PAGE */
+.deckred{
+    background-color: var(--collectingcolor-red);
+}
+.deckorange{
+    background-color: var(--collectingcolor-orange);
+}
+.deckyellow{
+    background-color: var(--collectingcolor-yellow);
+}
+.deckgreen{
+    background-color: var(--collectingcolor-green);
+}
+.deckblue{
+    background-color: var(--collectingcolor-blue);
+}
+.deckpurple{
+    background-color: var(--collectingcolor-purple);
+}
+.deckbrown{
+    background-color: var(--collectingcolor-brown);
+}
+.deckgray{
+    background-color: var(--collectingcolor-gray);
+}
+.deckspecial{
+    background-color: var(--collectingcolor-special);
+}
+.deckCOLORNOTFOUND{
+    background-color: none;
+}
+.deckdiv{
+    display:inline-block;
+    margin:5px;
+}
+.deckimgdiv{
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    width: 275px;
+}
+.deckheader{
+    text-align: center;
+    font-size: 15px; 
+    margin: 0px; 
+    padding: 5px;
+    border: 4px double var(--bordercolour);
+}
+.decklink{
+    text-align: center;
+    font-size: 15px; 
+    margin: 0px;
+}
+.neededdeckcolumn{
+    display:flex; 
+    flex-direction: column; 
+    padding:10px;  
+    margin: 10px; 
+    min-width: 90px;
+    border: 4px double var(--bordercolour);
+}
+
+
+
+
+
+
+
+
+
+
+

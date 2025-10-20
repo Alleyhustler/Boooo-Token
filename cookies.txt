@@ -1,0 +1,10 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.discordapp.com	TRUE	/	FALSE	1999999999	__cf_bm	Mz7yEevtPWj7Us.9zFfMNz2OcbtbpsaPacJK0mOq9rE-1753377601-1.0.1.1-sx.mFdUzzGhjbG0EbGO2WIDlxpViBvCUUOiJ6gzg7tfdLq2QcMIu8bJ8kYeMgINMolWaZQfGYy5nLjWNntqs02brIdnpaFUPwn1PkhwP7W8
+.discordapp.com	TRUE	/	FALSE	1999999999	_cfuvid	WbM3bIKRys0TylkjE6Ym2sloZDmmj24B_1ofIN_XOZo-1753377601036-0.0.1.1-604800000
+cdn.discordapp.com	TRUE	/	FALSE	1999999999	SameSite	None
+.discordapp.net	TRUE	/	FALSE	1999999999	__cf_bm	xT0S3iZWjHpixLllA8cv1W4lzEojH_fR41DyK8kL4MI-1753377642-1.0.1.1-LGPSBsUQKNwaZQ8QElyH4_zdsitQZ2f6MSEtwxvhTyOrhoKBzu.grgh62_xU2EdJmOeQsgpkhG.dGfEj8IGocSfHGrx_k3vnIO2_87RhClw
+.discordapp.net	TRUE	/	FALSE	1999999999	__cfruid	d8ac800a4d1dbe90d1ab759b82a53ad27a3f5ae3-1753377642
+.discordapp.net	TRUE	/	FALSE	1999999999	_cfuvid	7m.AXzRupbKJaf43x4EDEFtfVHwqLUeKKlIb6o9jftg-1753377642868-0.0.1.1-604800000
+media.discordapp.net	TRUE	/	FALSE	1999999999	SameSite	None
+

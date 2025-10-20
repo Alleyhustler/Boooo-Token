@@ -1,0 +1,179 @@
+
+:root {
+    --accentcolour: #e2d8d5;
+    --darkeraccent: #a68d85;
+    --darkestaccent: rgb(107, 83, 83);
+    --lightestaccent: #ffffff;
+    --linkcolour: #b8916c;
+}
+
+body {
+    background: url(graphics/LAMETEA/dp1_s1.gif);
+    font-family: romanceA;
+    text-align: center;
+}
+
+img {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    image-rendering: pixelated;
+}
+h1 {
+    font-family: AliceinWonderland;
+    font-size: 3em;
+    margin: 0 0 0 0;
+}
+h2 {
+    margin: 0.3em;
+    padding: 0;
+}
+p {
+    margin: 0.3em;
+    padding: 0;
+}
+a:link, a:visited {
+    color: var(--linkcolour);
+    transition: 0.2s;
+}
+a:hover, a:active {
+    letter-spacing: 1px; 
+    transition: 0.2s;
+}
+strong {
+    color: var(--darkeraccent);
+    text-transform: uppercase;
+}
+
+#garmentImg {
+    height: 100%;
+}
+
+#pixelated {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    image-rendering: pixelated;
+}
+
+#laceborder {
+    border-width: 7px;
+    border-style: solid;
+    border-image: url("graphics/lovesick/soft-lace.png") 7 fill round;
+}
+
+
+.backbutton {
+	width: 127px;
+	height: 40px;
+    padding-top:20px;
+    margin: auto;
+	background-image: url(bookshelf/cinnamon-philosophy/button002_black_empty.gif);
+	text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "garmentbox blurb"
+    "garmentbox selectionbox";
+    margin: auto;
+    max-width: 900px;
+    min-height: 590px;
+}
+
+.garmentbox {
+    grid-area: garmentbox;
+    margin: 1em 0 1em 0;
+    border-right: 1px var(--accentcolour) solid;
+}
+.garmentinfo {
+    margin-top: 1em;
+}
+.garmentinfo p {
+    text-align: left;
+}
+
+.blurb {
+    grid-area: blurb;
+    padding: 1em;
+}
+
+.selectionbox {
+    grid-area: selectionbox;
+    margin: 1em 0 1em 0;
+}
+.selectionbox button {
+    border: 4px double var(--darkeraccent);
+    background: var(--accentcolour);
+    font-family: romanceA;
+    transition: 0.2s;
+    max-width: 100px;
+    height: 150px;
+    padding: 5px;
+}
+.selectionbox img {
+    object-fit: cover;
+    object-position: 0 0;
+    max-height: 90px;
+    width: 100%;
+}
+.selectionbox button:hover {
+    cursor: pointer;
+    background: var(--lightestaccent);
+    transition: 0.2s;
+}
+.thumbnails {
+    max-height: calc(100% - 1em);
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1em auto 1em auto;
+    padding: 1em;
+    border: var(--linkcolour) 2px dotted;
+    overflow-x: hide;
+    overflow-y: auto;
+}
+
+.mannequin {
+    width: 187px;
+    height: 400px;
+    margin: auto;
+    background: url(mannequin.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    image-rendering: pixelated;
+  }
+  
+  @media only screen and (max-width: 780px) {
+    .container {
+        display: grid;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "blurb"
+        "garmentbox"
+        "selectionbox";
+        margin: auto;
+        align-content: center;
+        padding: 0;
+        width: calc(100% - 1em);
+    }
+
+    .garmentinfo p {
+        text-align: center;
+    }
+    .garmentbox {
+        margin: 0em;
+    }
+    .thumbnails {
+        width: 300px;
+        padding: 5px;
+        overflow-x: scroll;
+        flex-wrap: wrap;
+    }
+  }

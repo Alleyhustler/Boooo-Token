@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from argoxi.neocities.org/fanpages/jyushi by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Jul 2025 17:19:36 GMT -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jyushi Aimono</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/fonts.css">
+</head>
+
+<body>
+	<script type="text/javascript" src="jyushi/jyushifunctions.js"></script>
+<style>
+:root {
+    --bgcolour: #8a0040;
+    --lightest: #fff;
+    --light: #dbdbdb;
+    --mid: #d4537e;
+    --dark: #3e3d3f;
+    --darkest: #161414;
+    --accent1: #e0dbdb;
+    --accent2: #362d38;
+	--black: #000;
+	--jyushi: #e300b2;
+}
+
+body {
+    font-family: romanceA;
+    background: url(graphics/lovesick/gray-white-diamond-bg.png);
+}
+
+h1 {
+	text-align: left;
+	font-family: aliceinwonderland;
+	font-size: 4em;
+	margin: 0;
+	color: var(--light);
+}
+
+h2 {
+	color: var(--mid);
+	font-family: aliceinwonderland;
+	text-align: center;
+}
+
+h3 {
+	margin: 0;
+}
+
+a:link, a:visited {
+	color: var(--mid);
+	font-family: romanceA;
+	transition: 0.2s;
+}
+a:hover, a:active {
+	letter-spacing: 0.5px;
+	transition: 0.2s;
+}
+
+p {
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+strong {
+	font-family: romanceA;
+	color: var(--mid);
+}
+
+#imglaceborder {
+	border-width: 7px;
+	border-style: solid;
+	border-image: url("graphics/lovesick/soft-lace.png") 7 round;
+}
+
+#lacedivider-blk-long {
+	width: 391px;
+	height: 17px;
+	background: url(graphics/across/l4-1c.gif);
+	margin: 1em auto 1em auto;
+}
+#lacedivider-pink-short {
+	width: 275px;
+	height: 13px;
+	background: url(graphics/across/l2-2a.gif);
+	margin: 5px 0 5px 0;
+}
+
+.jyushipagedoll {
+	position: fixed;
+	right: 0;
+	bottom: 20px;
+	animation: floating 3s infinite ease-in-out;
+}
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+.backbutton {
+	width: 127px;
+	height: 40px;
+	padding-top: 20px;
+	font-family: Georgia; 
+	font-size: 16px;
+	background-image: url(bookshelf/cinnamon-philosophy/button002_black_empty.gif);
+	text-align: center;
+	color: black;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+.tooltip .tooltiptext {
+	visibility: hidden;
+	text-align: center;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: -5px;
+	right: -5px;
+	color: var(--mid);
+	background-color: var(--darkest);
+	border: 4px double var(--mid);
+}
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 1em 1em 1em;
+}
+
+.container {
+    margin: auto;
+	max-width: 1000px;
+    background: fixed url(graphics/LAMETEA/dp17_4.gif) #272727 repeat-x bottom;
+    border: 4px var(--darkest) double;
+	padding: 1em;
+}
+
+.mainimg {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+.mainimg img {
+    border: 4px var(--darkest) double;
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.main {
+    padding: 1em;
+    background: var(--accent1);
+    border: 4px var(--darkest) double;
+}
+.main h1 {
+	text-align: center;
+}
+
+.profile {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr;
+	align-items: center;
+	gap: 1em;
+}
+.profile img {
+	max-height: 400px;
+}
+.profile-table {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	background: var(--darkest);
+	border: 4px var(--black) double;
+	color: var(--accent1);
+	padding: 1em;
+}
+.profile-table h2{
+	margin: 0;
+	color: var(--light);
+}
+
+.stats {
+	border-right: 1px var(--mid) solid;
+	padding: 0 1em 0 0;
+}
+
+.affiliations {
+	padding: 0 0 0 1em;
+}
+.affil-flex {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.affil-box {
+	margin: 1em 0 0 0;
+	background: var(--accent1);
+	border: var(--mid) 4px double;
+	color: var(--darkest);
+	padding: 1em;
+	max-height: 135px;
+	overflow: auto;
+}
+.affil-box p {
+	color: var(--dark);
+}
+
+.songs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 1em 0 1em 0;
+}
+.song-box {
+	text-align: center;
+	padding: 1em;
+	margin: 0 0.5em 0 0.5em;
+	border: 4px double var(--mid);
+	background: var(--lightest);
+	flex-grow: 1;
+}
+
+.facts {
+	padding: 1em;
+	margin: 1em 1em 1em 0;
+	max-width: 300px;
+	background: var(--darkest);
+	border: 4px double var(--black);
+	float: left;
+	text-align: center;
+}
+.facts h2 {
+	margin: 0;
+}
+.facts ul {
+	color: var(--light);
+    list-style: "☾";
+	padding: 0 0 0 0.5em;
+	margin: 0;
+}
+.facts li {
+	padding-left: 0.5em;
+}
+.facts-scroll{
+	margin: 1em 0 0 0;
+	padding: 1em;
+	border: 1px solid var(--mid);
+	max-height: 200px;
+	overflow: auto;
+}
+
+.fanart {
+	padding: 1em;
+	margin: 1em 0 1em 1em;
+	max-width: 250px;
+	background: var(--darkest);
+	border: 4px double var(--black);
+	float: right;
+	text-align: center;
+}
+.fanart h2 {
+	margin: 0;
+}
+.fanart-scroll{
+	margin: 1em 0 0 0;
+	border: 1px solid var(--mid);
+	max-height: 400px;
+	overflow: auto;
+}
+.fanart-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: space-between;
+}
+.fanart-thumbnail {
+	width: 50px;
+	height: 50px;
+	margin: 0.5em;
+	border: 4px double var(--mid);
+}
+
+.gallery {
+	padding: 0.5em;
+	margin: 1em 0 1em 0;
+	border: 4px double var(--black);
+	background: var(--darkest);
+}
+.gallery-flex {
+	max-height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: space-between;
+	border: 1px solid var(--mid);
+	padding: 0.5em;
+	overflow: auto;
+}
+.gallery-flex img {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	object-position: 50% 50%;
+	border: 4px double var(--mid);
+}
+
+.merch {
+	text-align: center;
+}
+.merch-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: space-between;
+	padding: 0.5em;
+	overflow: auto;
+}
+.merch-flex img {
+	border: 4px double var(--mid);
+	max-height: 250px;
+	margin: 0.2em;
+}
+
+.counterbox {
+	color: var(--light);
+	text-align: center;
+	margin: 1em 0 0 0;
+}
+
+@media only screen and (max-width:1380px) {
+.jyushipagedoll {
+	display: none;
+}
+}
+
+@media only screen and (max-width:950px) {
+
+.profile {
+	grid-template-columns: 1fr;
+	grid-template-rows: 2fr;
+	justify-items: center;
+}
+.backbutton {
+	margin: auto;
+}
+}
+
+@media only screen and (max-width:650px) {
+h1 {
+	font-size: 3em;
+}
+
+#lacedivider-pink-short {
+	margin: auto;
+}
+
+.main-img {
+	width: calc(100% - 00.5em);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+.profile-table {
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 0.5fr;
+}
+
+.stats {
+	border-right: none;
+	padding: 0;
+}
+
+.affiliations {
+	padding: 1em 0 0 0;
+}
+.fanart {
+	padding: 1em;
+	margin: 1em auto auto auto;
+	max-width: 100%;
+	float: none;
+}
+.facts {
+	padding: 1em;
+	margin: 1em auto 1em auto;
+	max-width: 100%;
+	float: none;
+}
+.merch-flex img {
+	max-width: calc(100% - 0.4em - 8px);
+}
+}
+
+@media only screen and (max-width:420px) {
+body {
+	margin: 0;
+}
+
+h1 {
+	margin: 0;
+}
+
+.container {
+	padding: 0;
+}
+
+#lacedivider-blk-long {
+	display: none;
+}
+
+.jyushipagedoll {
+	display: block;
+	position: static;
+	margin: 0 0 0 2.5em;
+	right: unset;
+	bottom: unset;
+	float: none;
+}
+}
+
+</style>
+
+<a href="newspaper.html"><div class="backbutton">Back</div></a>
+
+<div class="container">
+
+<div class="header"><img src="graphics/main/spinningmoon.gif">
+<h1>Under the Moonlight</h1></div>
+<!--<div class="mainimg">
+	<img src="https://files.catbox.moe/0k6znh.jpg" loading="lazy">
+</div>-->
+
+<div class="main">	
+	
+<div class="profile">
+<img src="https://postimg.cc/zbYrBbFn" id="imglaceborder" style="float: left;">
+<div class="profile-table">
+
+	<div class="stats">
+		<h2>Stats</h2>
+		<p>
+		<strong>Name</strong> Aimono Jyushi / 四十物十四<br>
+		<strong>MC Name:</strong> 14th Moon<br>
+		<strong>Occupation:</strong> Vocalist of ArgoξOrchestra / アルゴξ楽団</p>
+		<div id="lacedivider-pink-short"></div>
+		<p><strong>Age:</strong> 18<br>
+		<strong>Bday:</strong> April 14<br>
+		<strong>Sign:</strong> Aries<br>
+		<strong>Height:</strong> 185cm<br>
+		<strong>Blood Type:</strong> AB<br></p>
+		<div id="lacedivider-pink-short"></div>
+		<p><strong>Likes:</strong> Amanda, Mirrors<br>
+		<strong>Dislikes:</strong> Oppressive people, Enclosed spaces</p>
+		<div id="lacedivider-pink-short"></div>
+		<p><strong>Voice Actor:</strong> Sakakihara Yuki<br>
+		<strong>Stage Actor:</strong> Daigo Kato<br>
+		</p>
+	</div>
+
+	<div class="affiliations">
+		<h2>Affiliations</h2>
+		<div class="affil-flex">
+
+<div class="affil-box">
+<h3>Bad Ass Temple</h3>
+<p>The group Jyushi was recruited to for the D.R.B. It is comprised of the group leader Kuko, the second member Jyushi, and the third member Hitoya.</p>
+</div>
+
+<div class="affil-box">
+<h3>ArgoξOrchestra</h3>
+<p>A Visual Kei band that Jyushi joined during his school years. The names of the members are unknown, and their appearances differ between adaption.</p>
+</div>
+
+		</div>
+	</div>
+
+</div>
+</div>
+
+<div class="songs">
+	<div class="song-box"><h3>Moonlight Shadow</h3>
+	<p><a href="https://open.spotify.com/track/5MKOwGFsUcF1HwyUiDlzGf?si=33306d06f7ab4d25" target="_blank">Spotify</a><br>
+		<a href="https://www.youtube.com/watch?v=fxYJvwPZF5o" target="_blank">Youtube</a><br>
+		Jyushi's debut solo.</p></div>
+	<div class="song-box"><h3>Violet Masquerade</h3>
+	<p><a href="https://open.spotify.com/track/6AR0H3jMvgf6G7zthTOI4s?si=07e69ab11c204ff1" target="_blank">Spotify</a><br>
+		<a href="https://youtu.be/SVO-K_HSGLo?si=N4swt6n8cvvop_91" target="_blank">Youtube</a><br>
+		Jyushi's second solo.</p></div>
+	<div class="song-box"><h3>Akuma no Hana</h3>
+	<p><a href="https://open.spotify.com/track/0EwpurqdBrnoyuifM6wBs4?si=e911e92b1cc648b1" target="_blank">Spotify</a><br>
+		<a href="https://youtu.be/F2OAhXOhCFw?si=6RwxF4OdK9efouMA" target="_blank">Youtube</a><br>
+		ArgoξOrchestra's debut solo.</p></div>
+</div>
+
+<img src="graphics/lovesick/ribbon-lacing-blk.png" style="float: right; margin-top: 1em;">
+<div class="about">
+	<h2>
+		Come, by all means, I shall introduce you to my world!</h2>
+	<p>Jyushi is the vocalist of the fictional band, ArgoξOrchestra and the second member of Bad Ass Temple. He's officially described as a self-absorbed crybaby, due to his obsession with his appearance and tendency to burst into tears quite easily. There's nothing he loves more than singing, and his best friend Amanda who is a plush toy pig gifted to him by his Grandma.</p>
+
+	<div class="facts">
+
+		<h2>Jyushi Fun Facts</h2>
+		<div class="facts-scroll">
+		
+	<ul>
+		<li>Jyushi's character colour is <span style="color: var(--jyushi);">hot pink</span>.</li>
+		<li>Jyushi's favourite meal is Napolitan.</li>
+		<li>Jyushi's least favourite food is roe.</li>
+		<li>The first time Amanda's design was ever shown was on a piece of <a href="https://kingeshop.jp/hypnosismic/pd.html?goods=ETZA-3248&amp;variation=ETZA-3248" target="_blank">merchandise</a>.</li>
+		<li>BAT were announced to join the series on September 8th, 2019 during Hypmic's 4th live.</li>
+		<li>Jyushi's profile quote 'Never never never give up!' is attributed to Winston Churchill.</li>
+		<li>Jyushi is right-handed.</li>
+		<li>Jyushi's favourite band is Dreams and Gods are Fake (夢と神は紛物 / Yume to Kami wa Magaimono).</li>
+		<li>Jyushi used to work at "<a href="https://www.youtube.com/watch?v=KEMSyp6SB80" target="_blank">WcDonald's</a>".</li>
+		<li>Jyushi refers to Kuko as "Master" when in Chuunibyo mode. He refers to Hitoya as "My God" in a one-off ARB voice line.</li>
+		<li><a href="https://imgur.com/a/5DYgnDh" target="_blank"></a><a href="https://imgur.com/a/5DYgnDh" target="_blank">ArgoξOrchestra's logo</a> resembles Moi Dix Mois' logo.</li>
+		<li>The guitar that Hitoya gifted to Jyushi is a Gretch White Falcon.</li>
+		<li>ArgoξOrchestra's song, Akuma no Hana was previewed in the drama track "Harmonious Cooperation" years before it got a full release.</li>
+	</ul>
+		
+		</div>
+		
+	</div>
+
+	<p>Jyushi's first appearance in the series is in the drama track, "The Conviction Of The Heart Can Never Be Broken!". He approaches Hitoya, the lawyer who has been looking out for him from a young age, about losing Amanda. Jyushi insists that it's extremely awful and would bring anyone to tears, but Hitoya disagrees and levels with Jyushi, telling him that he needs to learn to be independant. After offering Jyushi a few suggestions, they travel to Kugen temple where they meet Kuko, who is forced by his dad to assist Jyushi in learning to cope with his anxiety. Shenanigans ensue, and Kuko recruits the both of them after challenging Jyushi in order to judge whether he has the conviction to change his own life for the better. In that moment, Kuko declares them family and they've been supporting each other since.<br>
+	Jyushi is extremely passionate about what he loves, never compromising his interests for anyone despite how much it scares him sometimes. It's his goal in life to inspire people with his music in the same way his favourite musicians helped him get through the worst periods of his life, and he won't let anyone tell him he can't. Jyushi is often regarded as a weak person or a pushover, but that couldn't be further from the truth; he will always do his best to stand up for what he believes in. Even if that means weeping the whole way through.<br></p>
+</div>
+
+<div id="lacedivider-blk-long"></div>
+
+<div class="fanart">
+
+<h2>Fav fanart</h2>
+<div class="fanart-scroll">
+<div class="fanart-flex">
+	<!--template
+	<a href="" target="_blank"><img src="" class="fanart-thumbnail"></a>
+	-->
+
+	<!--fav-->
+	<a href="https://www.pixiv.net/en/artworks/80703338" target="_blank"><img class="fanart-thumbnail" src="jyushi/thumbnails/1.png"></a>
+	<!--yoru-->
+	<a href="https://www.pixiv.net/en/artworks/80797732" target="_blank"><img class="fanart-thumbnail" src="jyushi/thumbnails/2.png"></a>
+	<!--jiro jyushi-->
+	<a href="https://twitter.com/z_yyyz/status/1402985149696905233" target="_blank"><img class="fanart-thumbnail" src="jyushi/thumbnails/3.png"></a>
+	<!--past and present-->
+	<a href="https://www.pixiv.net/en/artworks/80784395" target="_blank"><img class="fanart-thumbnail" src="jyushi/thumbnails/4.png"></a>
+	<!--whatcha ghost-->
+	<a href="https://twitter.com/dede_ororo/status/1363028694986465281?s=20" target="_blank"><img class="fanart-thumbnail" src="jyushi/thumbnails/5.png"></a>
+	<!--cheki-->
+	<a href="https://twitter.com/chiyoman/status/1491419765378019328" target="_blank"><img class="fanart-thumbnail" src="jyushi/thumbnails/6.png"></a>
+	<!--tears-->
+	<a href="https://twitter.com/chiyoman/status/1390255460414988290" target="_blank"><img class="fanart-thumbnail" src="jyushi/thumbnails/7.png"></a>
+	<!--mori-->
+	<a href="https://twitter.com/a_t_5385/status/1447182890282799115" target="_blank"><img class="fanart-thumbnail" src="jyushi/thumbnails/a_t_5385.jpg"></a>
+</div>
+</div>
+	
+</div>
+
+<div class="lovemail">
+	<h2>Let’s look at the stars and laugh, Amanda.</h2>
+	<p>This is gonna be a little cringe but it's okay. That's what an obscure webpage is for.<br>
+	I don't even know where to begin with why I like Jyushi. Despite being my fav of all time, I don't usually talk about him at length. It took me a while to write his description because there's so much I could say about him and I want to take care in sharing my thoughts about him and do him justice, for the odd case someone who doesn't know him comes across this and reads through it LOL. That being said, I wrote a very surface level description... I'll probably come back and edit it several times over ^^;<br>
+	<img src="jyushi/angel.png" style="float: left; margin: 1em 1em 1em 0; border: 4px double var(--darkest);" class="main-img">
+	I first met Jyushi on the 7th of December, 2019. I'd been listening to Hypmic music on and off but I wasn't too overly invested. I was talking to a few friends who liked the series when they told me that a new division had been added to the series not too long ago! One of my friends said I might like Jyushi and sent me his first solo, Moonlight Shadow. It was downhill from there because I instantly became obsessed with his style and his theatric personality. I didn't use Last.fm back then, but I wish I had a record of how much I listened to it...<br>
+	To grossly boil down three years of following him and learning about him and consuming every piece of content I could find, Jyushi played a major role in helping me discover the things I like and what I now associate with myself. Looking back on it, those interests were always there but I may have never had the courage to indulge in them without meeting him and witnessing his passion. In that way, he's like an idol to me! Even if he's only fictional, I truly feel like he's achieved his goal of inspiring people in the real world. I know so many people who relate and look up to him, who have found a love of fashion and music thanks to him, and who have been able to persevere thanks to the courage he's given them.<br>
+	Shoutout to Jyushi all my friends love Jyushi.
+	</p>
+</div>
+
+<div class="analysis">
+	<h2>In this parallel universe where Icarus survived, thank you for the encore of that song.</h2>
+	<div class="jyushipagedoll">
+		<img src="jyushi/jyushichibi.png" height="300px">
+	</div>
+	<p>This is meant to be the part where I write analysis of his characyer and stuff but I'm too tired rn I'll add it later. Also my opinions are generally cringe and not very based and I worry about interpreting him and portraying him wrong so I'll have to spend some time thinking about it...<br>
+	Some plans include: Jyushi's association with angels, interesting comparisons between Jyushi and Ramuda, general BAT dynamic stuff and song lyric analysis...</p>
+</div>
+
+<div class="media">
+	<h2>Painting castles in the sky with our flow...</h2>
+	<div id="lacedivider-blk-long"></div>
+	<p>I already post my most recent art in my gallery, so this section is like an archive for some of my older Jyushi art. Please excuse the wonky old anatomy and whatnot. I think it's funny how you can see the evolution of my art through him...</p>
+
+<div class="gallery">	
+
+<div class="gallery-flex">
+	<!--template
+	<div class="tooltip">
+		<a href="" target="_blank"><img src=""></a>
+		<span class="tooltiptext"></span>
+	</div>
+	-->
+
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/FYgcGqTc" target="_blank"><img src="https://postimg.cc/FYgcGqTc"></a>
+		<span class="tooltiptext">10th Dec 2019</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/47KYCFQW" target="_blank"><img src="https://postimg.cc/47KYCFQW"></a>
+		<span class="tooltiptext">12th Dec 2019</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/1gdzKr1w" target="_blank"><img src="https://postimg.cc/1gdzKr1w"></a>
+		<span class="tooltiptext">13th Jan 2020</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/sMDDdNV5" target="_blank"><img src="https://postimg.cc/sMDDdNV5"></a>
+		<span class="tooltiptext">14th Mar 2020</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/WdWp2w3C" target="_blank"><img src="https://postimg.cc/WdWp2w3C"></a>
+		<span class="tooltiptext">1st Apr 2020</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/WFrswRnc" target="_blank"><img src="https://postimg.cc/WFrswRnc"></a>
+		<span class="tooltiptext">8th Apr 2020</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/8smj2WRQ" target="_blank"><img src="https://postimg.cc/8smj2WRQ"></a>
+		<span class="tooltiptext">14th Apr 2020 (happy birthday!)</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/wRqTqfXK" target="_blank"><img src="https://postimg.cc/wRqTqfXK"></a>
+		<span class="tooltiptext">27th May 2020</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/v4g8Z6Vm" target="_blank"><img src="https://postimg.cc/v4g8Z6Vm"></a>
+		<span class="tooltiptext">29th May 2020</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/zyg5rZsb" target="_blank"><img src="https://postimg.cc/zyg5rZsb"></a>
+		<span class="tooltiptext">6th June 2020</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/bdWQv1GG" target="_blank"><img src="https://postimg.cc/bdWQv1GG"></a>
+		<span class="tooltiptext">16th June 2020</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/BjGHTsB4" target="_blank"><img src="https://postimg.cc/BjGHTsB4"></a>
+		<span class="tooltiptext">5th July 2020</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/0KnGjBh7" target="_blank"><img src="https://postimg.cc/0KnGjBh7"></a>
+		<span class="tooltiptext">9th July</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/Lhprqgrs" target="_blank"><img src="https://postimg.cc/Lhprqgrs"></a>
+		<span class="tooltiptext">28th July 2020</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/xcs7Fxqk" target="_blank"><img src="https://postimg.cc/xcs7Fxqk"></a>
+		<span class="tooltiptext">1st Aug 2020</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/CRX2wRGS" target="_blank"><img src="https://postimg.cc/CRX2wRGS"></a>
+		<span class="tooltiptext">16th Aug 2020 (i wanted jyushi x lloromanic so bad :c)</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/jwrkJB31" target="_blank"><img src="https://postimg.cc/jwrkJB31"></a>
+		<span class="tooltiptext">20th Sep 2020 (i think i've redrawn this)</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/Q9kYgSRd" target="_blank"><img src="https://postimg.cc/Q9kYgSRd"></a>
+		<span class="tooltiptext">27th Sep 2020</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/N2sJdmc7" target="_blank"><img src="https://postimg.cc/N2sJdmc7"></a>
+		<span class="tooltiptext">7th Oct 2020 (i wanna redraw this)</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/9rfgTd1c" target="_blank"><img src="https://postimg.cc/9rfgTd1c"></a>
+		<span class="tooltiptext">29th Nov 2020</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/w7bfk1bL" target="_blank"><img src="https://postimg.cc/w7bfk1bL"></a>
+		<span class="tooltiptext">4th Jan 2021</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/hXk2HHnG" target="_blank"><img src="https://postimg.cc/hXk2HHnG"></a>
+		<span class="tooltiptext">7th April 2021 (still one of my favs)</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/94yLVJXY" target="_blank"><img src="https://postimg.cc/94yLVJXY"></a>
+		<span class="tooltiptext">30th Apr 2021</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/HcHBLXVD" target="_blank"><img src="https://postimg.cc/HcHBLXVD"></a>
+		<span class="tooltiptext">30th May 2021</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/sQcKGxhB" target="_blank"><img src="https://postimg.cc/sQcKGxhB"></a>
+		<span class="tooltiptext">23rd June 2021</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/vcjhVpcv" target="_blank"><img src="https://postimg.cc/vcjhVpcv"></a>
+		<span class="tooltiptext">5th July 2021</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/XZKktqx2" target="_blank"><img src="https://postimg.cc/XZKktqx2"></a>
+		<span class="tooltiptext">14th July 2021</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://i.postimg.cc/HxMZQs08/28.jpgG" target="_blank"><img src="https://postimg.cc/TLRJxx4T"></a>
+		<span class="tooltiptext">14th July 2021</span>
+	</div>
+	<!--template-->
+	<div class="tooltip">
+		<a href="https://postimg.cc/sQp4dXc6" target="_blank"><img src="https://postimg.cc/sQp4dXc6"></a>
+		<span class="tooltiptext">27th July 2021</span>
+	</div>
+
+</div>
+
+</div>	
+</div>
+
+<div class="merch">
+	<h2>Burn up this life and dance.</h2>
+	<div id="lacedivider-blk-long"></div>
+	<p>A proper list of my collection can be seen on <a href="https://myfigurecollection.net/profile/marroncream" target="_blank">my figure collection</a> but here's some funny pics of stuff...</p>
+	<div class="merch-flex">
+		<img src="https://postimg.cc/FfWHF5rj">
+		<img src="https://postimg.cc/18KzTVb7">
+		<img src="https://postimg.cc/HVXnwhzg">
+		<img src="https://postimg.cc/bD4Ybx2r">
+		<img src="https://postimg.cc/wtTBdTpq">
+		<img src="https://postimg.cc/bd2wPBKt">
+	</div>
+</div>
+</div>
+<p id="counter" class="counterbox"></p>
+
+
+
+</body>
+
+<!-- Mirrored from argoxi.neocities.org/fanpages/jyushi by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Jul 2025 17:20:01 GMT -->
+</html>

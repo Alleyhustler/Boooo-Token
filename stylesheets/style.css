@@ -1,0 +1,254 @@
+:root {
+    --mutedpurple: #6B4C7D; 
+    --darkerpurple: #473a5a;
+    --lighterpurple: #7F778D;
+    --titlepurple: #5b5861;
+    --accent: rgb(43, 42, 49);
+    --blk: #000;
+    --lightgrey: #545456;
+    --grey: #27282c;
+    --white: #e6e6e6;
+    --doubleborder: 4px double;
+    --offwhite: #e9ddd9;
+}  
+
+body {
+margin: 0;
+font-family: RomanceA;
+}
+
+::selection, ::-moz-selection {
+  background: var(--mutedpurple);
+  color: #fff;
+}
+
+p {
+    margin: 0.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+strong {
+    font-family: PlayfairDisplaySC;
+    font-style: italic;
+}
+
+a:link, a:visited {
+    color: var(--white);
+    transition: 0.1s;
+}
+a:hover {
+    color: var(--darkerpurple);
+    transition: 0.1s;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+h3 {
+    margin: 0;
+}
+
+table {
+    border: 0;
+    border-spacing: 0;
+    padding: 0;
+}
+td {
+    border: 0;
+    border-spacing: 0;
+    padding: 0;
+}
+tr {
+    border: 0;
+    border-spacing: 0;
+    padding: 0;
+}
+
+@keyframes float {
+    0% { margin-top: 10px; }
+    100% { margin-top: 0; }
+}
+
+.roman {
+    list-style-type: lower-roman;
+   }
+
+#italics {
+    font-style: italic;
+}
+
+#antialias {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+#titlebox {
+    background: var(--titlepurple);
+    color: var(--blk);
+    border: var(--doubleborder) var(--blk);
+    padding: 0.5em;
+}
+#alttitlebox {
+    background: var(--grey);
+    color: var(--blk);
+    border: var(--doubleborder) var(--blk);
+    padding: 0.5em;
+}
+
+.backbutton {
+    margin: 3em auto auto auto;
+    padding-top: 20px;
+	width: 127px;
+	height: 40px;
+	background-image: url(bookshelf/cinnamon-philosophy/button002_black_empty.gif);
+	text-align: center;
+}
+.backbutton a:link, a:visited {
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.1s;
+}
+.backbutton a:hover, a:active {
+    color: var(--lighterpurple);
+    transition: 0.1s;
+}
+#whitebackbutton {
+	background-image: url(bookshelf/cinnamon-philosophy/button002_white_empty.gif);
+}
+
+.lace {
+    position: fixed;
+    background-image: url(graphics/NEOHIMEISM/repeat-lace004.gif);
+    background-repeat: repeat-x;
+    background-size: auto 40px;
+    height: 40px;
+    width: 100%;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+  
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+
+#divider {
+    margin: 1em 0 1em 0;
+}
+
+/* toggleable start*/
+.contentspanel {
+    width: calc(100% - 2rem + 4px);
+    margin: 1em auto 1em auto;
+  }
+.contentsbtn {
+    width: 100%;
+    padding: 0.5em;
+    font-family: RomanceA;
+    text-transform: uppercase;
+    background-color: var(--titlepurple);
+    color: var(--blk);
+    border: var(--doubleborder) var(--blk);
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.contentsbtn:hover {
+    color: var(--white);
+    transition: 0.2s;
+}
+.contentsbtn h2:after {
+    content: '\002B';
+    font-weight: bold;
+    margin: 0 0 0 0.5em;
+}
+.active h2:after {
+    content: "\2212";
+}
+/* toggleable  end*/
+
+.gif-toggle {
+    text-align: center;
+    margin: auto;
+}
+.gif-toggle-btn {
+    width: 50px;
+    height: 50px;
+    background: url(graphics/custom/play-gif.png);
+    border: none;
+    color: var(--white);
+    font-family: RomanceA;
+    transition: 0.1s;
+}
+.gif-toggle-btn:hover {
+    color: var(--lighterpurple);
+    transition: 0.1s;
+}
+
+.counter {
+    margin: auto;
+    text-align: center;
+}
+
+#main-content {
+    background-color: var(--blk);
+    color: var(--lightgrey);
+    text-align: center;
+    padding: 1em;
+}
+#sidebar-content {
+    background-color: var(--blk);
+    color: var(--grey);
+    min-width: 250px;
+}
+.layout-grid {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 1em;
+    max-width: 950px;
+}
+  
+
+@media only screen and (max-width:800px) {
+    .layout-grid {
+        grid-template-columns: 1fr;
+    }
+    #nav {
+        position: fixed;
+        margin-bottom: 0;
+        z-index: 2;
+    }
+    #TL1-dimensions {
+        height: 36px;
+    }
+    #main-content {
+    padding: 4em 1em 1em 1em;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    #sidebar-content {
+        width: 100%;
+        max-height: 100%;
+        overflow: auto;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.1fr 0.2fr 0.2fr 0.1fr 0.2fr;
+        grid-template-areas: 
+        "welcome"
+        "video"
+        "divider1"
+        "linkme"
+        "status"
+        "divider2"
+        "webrings";
+        gap: 0.5em;
+    }
+}

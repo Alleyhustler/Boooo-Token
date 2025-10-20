@@ -1,0 +1,150 @@
+#neohimeism {
+background: url(graphics/NEOHIMEISM/repeat-glitter001.gif) repeat-x;
+background-position: 0 30px;
+}
+#neohimeism p {
+    border: #e3e3e3 4px double;
+    background: #eeeeee;
+    padding: 0.5em;
+}
+#neohimeism a:link, #neohimeism a:visited {
+    color: #777070;
+    transition: 0.2s;
+}
+#neohimeism a:hover, #neohimeism a:active {
+    color: #e3e3e3;
+    transition: 0.2s;
+}
+#neohimeism .divider {
+    background: url(graphics/NEOHIMEISM/line015/line015_003.gif) no-repeat 50% 0;
+    height: 15px;
+    width: 100%;
+}
+
+#across {
+background: url(graphics/across/w4-1b.gif);
+padding: 1em;
+}
+#across h3 {
+    color: #fff;
+}
+#across ul {
+    border: #000000 4px double;
+    background: #ffffff;
+    padding: 0.5em;
+}
+#across p {
+    border: #000000 4px double;
+    background: #ffffff;
+    padding: 0.5em;
+}
+#across a:link, #across a:visited {
+    color: #9b9b9b;
+    transition: 0.2s;
+}
+#across a:hover, #across a:active {
+    color: #000000;
+    transition: 0.2s;
+}
+#across .divider {
+    background: url(graphics/across/l2-1a.gif) no-repeat;
+    height: 13px;
+    width: 275px;
+}
+
+#asterism {
+background: url(graphics/asterism/mushroom1-red1.gif);
+padding: 1em;
+font-family: RomanceA;
+color: #660e03;
+}
+#asterism h3 {
+    color: #660e03;
+}
+#asterism ul {
+    border: #660e03 4px double;
+    background: #ffffff;
+    padding: 0.5em;
+}
+#asterism p {
+    border: #660e03 4px double;
+    background: #ffffff;
+    padding: 0.5em;
+}
+#asterism a:link, #asterism a:visited {
+    color: #b36960;
+    transition: 0.2s;
+}
+#asterism a:hover, #asterism a:active {
+    color: #921505;
+    transition: 0.2s;
+}
+#asterism .divider {
+    background: url(graphics/asterism/ribbon2-12.gif) no-repeat;
+    height: 40px;
+    width: 198px;
+}
+#asterismrepeat {
+    background: url(graphics/asterism/1-gray/2.gif) center;
+}
+
+#fatgrrlz {
+    background: url(graphics/fatgrrlz/spooky-cats/bg.gif);
+    border: 15px solid transparent;
+    border-image-source: url(graphics/fatgrrlz/spooky-cats/border.png);
+    border-image-slice: 36%;
+    border-image-repeat: round;
+    border-image-width: 1.5rem;
+    background-clip: padding-box;image-rendering: crisp-edges;
+    padding: 1em;
+    color: #ebdad5;
+}
+#fatgrrlz ul {
+    border: #8f837f 4px double;
+    background: #474747;
+    padding: 0.5em;
+}
+#fatgrrlz p {
+    border: #8f837f 4px double;
+    background: #474747;
+    padding: 0.5em;
+}
+#fatgrrlz a:link, #fatgrrlz a:visited {
+    color: #c0b0ab;
+    transition: 0.2s;
+}
+#fatgrrlz a:hover, #fatgrrlz a:active {
+    color: #8f837f;
+    transition: 0.2s;
+}
+
+
+#ooparts ul {
+    border: #000 4px double;
+    background: #fff;
+    padding: 0.5em;
+}
+#ooparts p {
+    border: #000 4px double;
+    background: #fff;
+    padding: 0.5em;
+}
+#oopartsrepeattop {
+    background: url(graphics/ooparts/tenshitable/top-crwt.gif) center;
+}#oopartsrepeattop {
+    background: url(graphics/ooparts/tenshitable/un-crwt.gif) center;
+}
+
+#lsdx69 {
+    padding: 10px;
+}
+#lsdx69 ul {
+    border: #000 4px double;
+    background: #fff;
+    padding: 0.5em;
+}
+#lsdx69 p {
+    border: #000 4px double;
+    background: #fff;
+    padding: 0.5em;
+}
